@@ -1,0 +1,17 @@
+{
+  "name": "pimatic-beep",
+  "version": "1.0.0",
+  "description": "Pimatic module to beep the system speaker as an action.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "https://github.com/hongkongkiwi/pimatic-beep.git"
+  ],
+  "author": "Andy Savage <andy@savage.hk>",
+  "license": "MIT",
+  "dependencies": {
+    "beepbeep": "^1.2.0"
+  }
+}
