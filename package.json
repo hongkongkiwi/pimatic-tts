@@ -1,17 +1,39 @@
 {
-  "name": "pimatic-beep",
+  "name": "pimatic-tts",
   "version": "1.0.0",
-  "description": "Pimatic module to beep the system speaker as an action.",
-  "main": "index.js",
+  "description": "Pimatic module to use speech to text for announcements.",
+  "main": "tts",
+  "configSchema": "tts-config-schema.coffee",
+  "files": [
+    "README.md",
+    "LICENSE",
+    "tts.coffee",
+    "tts-config-schema.coffee"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hongkongkiwi/pimatic-tts.git"
+  },
   "keywords": [
-    "https://github.com/hongkongkiwi/pimatic-beep.git"
+    "tts",
+    "text to speech",
+    "pimatic",
+    "home automation",
+    "say",
+    "speaker",
+    "hal9000"
   ],
   "author": "Andy Savage <andy@savage.hk>",
   "license": "MIT",
   "dependencies": {
-    "beepbeep": "^1.2.0"
+    "bluebird": "^3.4.1",
+    "google-tts-api": "0.0.1",
+    "lame": "git+https://github.com/TooTallNate/node-lame.git",
+    "request": "^2.72.0",
+    "say": "^0.9.0",
+    "speaker": "^0.3.0"
   }
 }
